@@ -1,10 +1,103 @@
 /* css */
-* {
-  font-family: 'Noto Sans', sans-serif;
+/* 1- pre-loader */
+.loader_bg {
+  position: fixed;
+  z-index: 999999999999;
+  background:#FFF;
+  width: 100%;
+  height: 100%;
+}
+.loader {
+  border: 0 solid transparent;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top:calc(50vh - 75px);
+  left:calc(50vw - 75px);
+}
+.loader::before, .loader::after {
+  content: '';
+  border: 1em solid #46b0da;
+  border-radius: 50%;
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation:loader 2s linear infinite;
+  opacity: 0;
+}
+.loader::before {
+  animation-delay: .5s;
+}
+@keyframes loader {
+  0% {
+    transform:scale(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+
+  }
+  100% {
+    transform:scale(1);
+    opacity: 0;
+  }
+
+}
+/* 2- scroll */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 1px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 10px #29ABE2;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #0071BC; 
+  box-shadow: inset 0 0 6px rgba(#FFF,0.4); 
+}
+* , p , h1 , h2 , h3 , h4 , h5 {
+  margin:0 ; 
+  padding: 0;
+  box-sizing: border-box;
+}
+.english {
+  font-family: 'Montserrat', sans-serif;
+}
+.arabic {
+  font-family: 'cairo', sans-serif;
 }
 .main-pic-size {
   height: 403px;
   width: 723px;
+}
+.title-page {
+  text-align: center;
+  margin-bottom: 80px;
+  margin-top: 80px;
+  font-family: 'Raleway', sans-serif;
+}
+.title-page h2 {
+  font-size: 30px;
+  color: #0071BC;
+  line-height: 34px;
+  font-family: 'raleway', sans-serif;
+  font-weight: 700;
+  font-family: 'Raleway', sans-serif;
+  margin-bottom: 20px;
+}
+.title-page p {
+  font-size: 14px;
+  color: #666666;
+  line-height: 20px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
 }
 
 ul li {
@@ -13,34 +106,100 @@ ul li {
 .text-primary {
   color: #35A6FD !important;
 }
-.detailed-nav {
-  background-color: #000;
-  font-size: 13px;
-  padding: 13px;
-}
 .start {
     margin-left: 5px;
     border-radius: 5px;
 }
-.slider__content-con {
-  padding-top: 130px;
+.header-top {
+  background-color: #29ABE2;
+  color: #fff;
+  height: 45px;
+  padding-top: 5px;
 }
-.slider__content-con h1 {
-  line-height: 3.5rem;
-  font-weight:700
+.header-top a {
+  color:#FFF
 }
-.slider-content__title {
-    overflow: visible;
-    font-family: "Open Sans";
-    font-size: 34px;
-    font-weight: 700;
-    color: black;
-    text-align: center;
-    line-height: 1.4;
-    border-radius: 0px;
+.lounder {
+  font-family: 'Karla',sans-serif;
+  font-size: 16px;
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding-left: 20px;
+  color:#8a8a8a;
+  line-height: 16px;
 }
-.slider span{
-    font-size: 50px;
+.phone {
+  color: #22bcff;
+  font-size: 26px;
+  font-weight: 700;
+}
+.mobile {
+  display: none;
+}
+.slider {
+  background-image: url("../images/homeslide.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 550px;
+}
+.slider_content {
+  padding-top:180px;
+}
+
+.solution,.solution-ar {
+  font-size: 30px;
+  color: #fff;
+  line-height: 42px;
+  font-family: 'raleway', sans-serif;
+  font-weight: 900;
+  text-transform: capitalize;
+}
+.solution-ar {
+  font-family: 'cairo', sans-serif;
+}
+.appointments {
+  margin-top: -194.5px;
+}
+.appointments_card {
+  width: 100%;
+  padding: 30px 0px 35px 0px;
+  background-color: #85DBFF;
+  font-family: 'Montserrat', sans-serif;
+}
+.appointments_card i {
+  border-width: 0px;
+  width: 60px;
+  height: 60px;
+  font-size: 40px;
+  line-height: 60px;
+  text-align: center;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  color: #ffffff;
+}
+.appointments_card h5 {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #ffffff;
+  margin-top:13px ;
+
+}
+.appointments_card h2 {
+  font-size: 18px;
+  font-weight: 600;
+  font-style: normal;
+  color: #ffffff;
+  margin-top:13px ;
+}
+.moov {
+  background-color: #0071BC;
+}
+.orange {
+  background-color: #29ABE2;
+
 }
 .why-we , .gallery ,.open {
     margin-top: 15rem;
@@ -53,26 +212,18 @@ ul li {
 .needs , .open {
     background-color: #f5f9fa;
 }
-.footer {
-    margin-top: 90px; 
-    padding-bottom: 40px;
-
-}
-.footer p , .social {
-    margin-top: 30px;
-}
 footer {
-    padding-bottom: 30px;
-    border-bottom: 1px solid #000;
+    margin-top: 90px; 
+    background-color : #dde3eb;
+    padding-top: 30px;
 }
 .social {
-    margin-top: 45px;
-    margin-bottom: 0;
+    margin-top: 15px;
 }
 .social i {
-    font-size: 30px;
-    margin-right: 10px;
-    margin-left: 10px;
+    font-size: 20px;
+    margin-right: 2px;
+    margin-left: 2px;
     color:#41B6E6
 }
 .footer4soft {
@@ -245,6 +396,45 @@ footer {
     height: 45px;
   }
 
+  /** Services Section **/
+  .services-content h5 {
+    font-size: 18px;
+    color: #333333;
+    line-height: 22px;
+    font-family: raleway, sans-serif;
+    font-weight: 700;
+  }
+  .services-content p {
+    font-size: 14px;
+    color: #666;
+    font-family: raleway, sans-serif;
+    margin-top: 7px;
+  }
+  @media (max-width: 998px) {
+    .img-box {
+        width: 100%;
+    }
+    .download {
+      padding-top: 1rem !important;
+    }
+    .responsive-link {
+      display:none
+    }
+    .logo {
+      padding-top: 50px;
+      text-align: center;
+    }
+    .slider__content-con {
+      padding-top: 10px;
+    }
+    .header-top {
+      display: none;
+    }
+    .our-services {
+      display: none;
+    }
+  
+  }  
 @media (max-width: 768px) {
     .img-box {
         width: 100%;
@@ -255,8 +445,13 @@ footer {
     .responsive-link {
       display:none
     }
+    .slider_content {
+      text-align: center;
+    }
+
 }
-@media (max-width: 998px) {
+
+@media (max-width: 576px) {
   .img-box {
       width: 100%;
   }
@@ -266,12 +461,18 @@ footer {
   .responsive-link {
     display:none
   }
-  .logo {
-    padding-top: 50px;
-    text-align: center;
+  .title-page h2 {
+    font-size: 16px;
+  } 
+  .not-mobile {
+    display: none;
   }
-  .slider__content-con {
+  .mobile {
+    display: block;
     padding-top: 10px;
   }
-}
 
+  .appointments {
+    margin-top: -160.5px;
+  }
+}

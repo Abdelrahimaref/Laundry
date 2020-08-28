@@ -24,6 +24,10 @@
        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">      
        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+       <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+       <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+       <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;400;600;700;900&display=swap" rel="stylesheet">
+       <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;500;600;700;800;900&display=swap" rel="stylesheet">
        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	   <!--Internet Explorer-->
 	    <script src="js/html5shiv.min.js"></script>
@@ -31,64 +35,137 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
 
 	</head>
-	<body dir="rtl">
+	<body class="arabic" dir="rtl">
+        <div class="loader_bg">
+            <div class="loader"></div>
+        </div>
 
         <!--- Header Section-->
-        <nav class=" navbar-expand-lg detailed-nav navbar-dark fixed-top">
-
+        <nav class="navbar-expand-lg header-top">
             <div class="container">
                 <div class="d-flex" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto text-center">
-                        <li class="nav-item">
-                            <a class="nav-link text-light" href="#"><i class="fas fa-phone fa-fw mr-1"></i> الهاتف : 0101245390</a>
+                    <ul class="navbar-nav ml-auto text-center">
+                        <li class="nav-item mr-4 ">
+                            <a class="nav-link " href="#"><i class="fas fa-phone fa-fw mr-1"></i> الهاتف : 01012458990</a>
                         </li>
                         <li class="nav-item responsive-link">
-                            <a class="nav-link text-light" href="#"><i class="fas fa-clock fa-fw mr-1"></i>  التوقيت : من الاحد الى الثلاثاء من الساعة 9 صباحا الى الساعة 10 مساءا</a>
+                            <a class="nav-link " href="#"><i class="fas fa-envelope fa-fw mr-1"></i> الايميل :  Email info@laundryes.com </a>
                         </li>
-
-                    </ul>
-                    <ul class="navbar-nav m-auto text-center">
-                        <li class="nav-item">
-                            <a class="nav-link text-light" href="#"><i class="fas fa-map-marker-alt fa-fw mr-1"></i> العنوان : اسيوط شارع يسرى راغب </a>
+                        <li class="nav-item responsive-link">
+                            <a class="nav-link mr-4" href="index.html"><i class="fas fa-language fa-fw ml-1 border pt-1 pb-1 pl-4 pr-2"></i>  En</a>
                         </li>
                     </ul>
-                    <ul class="navbar-nav ml-auto text-center">
+                    <ul class="navbar-nav mr-auto ">
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="index.html">En</a>
+                            <a class="nav-link " href="#"><i style="font-size:24px" class="fab fa-facebook fa-fw "></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#"><i style="font-size:24px" class="fab fa-whatsapp fa-fw"></i></a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="#"><i style="font-size:24px" class="fab fa-twitter fa-fw"></i></a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="#"><i style="font-size:24px" class="fab fa-google fa-fw"></i></a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <div class="container logo" style="margin-top: 80px;">
-            <img src="images/MH Hoor-01.png" alt="" style="width: 150px;">
+
+        <!--- Header Section-->
+        <div class="second-header pt-2">
+            <div class="container">
+                <div class="d-flex justify-content-between">
+                    <ul class="list-unstyled">
+                        <li class="nav-item">
+                            <a class="nav-link " href="#"><img src="images/MH Hoor-01.png" alt="" style="width:80px"></a>
+                        </li>
+                    </ul>
+                    <ul class="list-unstyled">
+                        <li class="nav-item mr-4 ">
+                            <a class="nav-link pt-4 not-mobile" href="#"><span class="border-left lounder pl-3"> تواصل معنا الان</span> <span class="pr-3 phone ">(+02) 114 336 321</span>  </a>
+                            <div class="mobile">
+                                <p class="lounder text-center">Want A lounde ?</p>
+                                <p class="phone text-center">(+02) 114 336 321</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
 
-        <div class="slider">
-            <div class="slider__content">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6 slider__content-con">
-                            <h1 class="mt-5 text-right">
-                                التنظيف الجاف في المنزل في مصر
-                            </h1>
-                            <p class="mt-2 text-right">
-                                نلتقط ملابسك من عند باب منزلك ونقوم بتسليمها مغسولة ومكواة خلال 48 ساعة                            
-                            </p>                          
-
-                        </div>
-                        <div class="col-lg-6 ">
-                            <img src="images/cover-slider.jpg" alt=""  data-toggle="modal" data-target="#modal1" class="w-100" style="cursor: pointer;">
-                        </div>
+        <div class="slider" >
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6"></div>
+                    <div class="col-md-6 slider_content text-right">
+                        <h2 class="solution-ar" data-aos="flip-left" data-aos-duration="4500">
+                            التنظيف الجاف بالمنزل في مصر.
+                        </h2>
+                        <p class="text-white">نأخذ ملابسك من عند باب منزلك ونقوم بتسليمها مغسولة ومكواة خلال 48 ساعة.
+                        </p>
                     </div>
                 </div>
             </div>
 
+        </div>
+
+        <div class="appointments" data-aos="fade-up"data-aos-easing="linear"data-aos-duration="1000">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-12 pl-0 pr-0 ">
+                        <div class="appointments_card d-flex justify-content-center align-items-center" style="flex-direction: column;">
+                            <div>
+                                <i class="far fa-calendar-check"></i>
+                            </div>
+                            <h5>
+                                مفتوح 
+                            </h5>
+                            <h2>
+                                السبت - الخميس : 08:00 - 17:00
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 pl-0 pr-0">
+                        <div class="appointments_card orange d-flex justify-content-center align-items-center" style="flex-direction: column;">
+                            <div>
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <h5>
+                                تواصل معنا الان
+                            </h5>
+                            <h2>
+                                +732-555-1234
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 pl-0 pr-0">
+                        <div class="appointments_card moov d-flex justify-content-center align-items-center" style="flex-direction: column;">
+                            <div>
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <h5>
+                                راسلنا الان 
+
+                            </h5>
+                            <h2>
+                                info@company.com
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Why choose us -->
 
-        <div class="why-we" id="about">
+        <div class="mt-5 pt-2" id="about" data-aos="fade-up"data-aos-easing="linear"data-aos-duration="1000">
             <div class="container">
-                <div class="mt-3 mb-5 pb-4 slider-content__title">كيف نعمل ؟ </div>
+                <div class="title-page">
+                    <h2>ماذا نقدم لك ؟ </h2>
+                    <p></p>
+                </div>
                 <div class="row">
                     <div class="col-lg-4 col-md-6 d-flex justify-content-center">
                         <div class="p-4 text-center">
@@ -113,17 +190,17 @@
         </div>
 
         <!-- .monthly-plans -->
-        <div class="plans pt-5 mt-5">
+        <div class="plans pt-5 mt-5 text-right" data-aos="fade-up"data-aos-easing="linear"data-aos-duration="1000">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 text-right " style="padding-top: 150px;">
-                        <p class="slider-content__title text-right">
-                            هيا اطلب الان 
-                        </p>
+
+                    <div class="col-lg-6 " style="padding-top: 150px;">
+                        <div class="pb-4 slider-content__title ">
+                            هيا قم بالطلب الان !!
+                        </div>
                         <p class="text-secondary">
-                            ربما تحتاج فقط إلى طلب غسيل و / أو تنظيف جاف لمرة واحدة
-                            اكتشف خدمات الغسيل والكي والتنظيف الجاف للملابس الأكثر حساسية أو بياضات المنزل.
-                            
+                            قد تحتاج فقط إلى طلب غسيل و / أو تنظيف جاف لمرة واحدة. اكتشف خدمات الغسيل والكي والتنظيف الجاف للملابس أو البياضات الأكثر حساسية.
+
                         </p>
                     </div>
                     <div class="col-lg-6 pt-5">
@@ -138,74 +215,168 @@
         </div>
 
 
-        <div class="needs pt-5">
+        <div class="needs pt-5 text-right" data-aos="fade-up"data-aos-easing="linear"data-aos-duration="1000">
             <div class="container">
-                <div class="row">   
+                <div class="row">
                     <div class="col-lg-6">
                         <div class="w-100 ">
                             <img src="images/LAUNDRY 1.png" alt="" class="w-100">
                         </div>
-                    </div>
-                    <div class="col-lg-6 text-right " style="padding-top: 80px;">
-                        <p class="mt-3 slider-content__title text-right">
-                            خطط الغسيل الشهرية؟  
-                        </p>
+                    </div>   
+                    <div class="col-lg-6 " style="padding-top: 80px;">
+                        <div class="mt-3 pb-4 slider-content__title">
+                            خطط الغسيل الشهرية !!
+                        </div>
                         <p class="text-secondary">
-                            استأجر خططنا الشهرية وانس أمر الغسيل والكي إلى الأبد. من خلال خدمة التوصيل المجاني للمنازل ، نلتقط ملابسك كل أسبوع من المنزل أو في أي مكان تفضله.                        </p>
+                            استأجر خططنا الشهرية وانس أمر الغسيل والكي إلى الأبد. من خلال خدمة التوصيل المجاني إلى المنزل ، نأخذ ملابسك كل أسبوع من المنزل أو من أي مكان تريده.
+                        </p>
                     </div>
+
                 </div>
 
             </div>
 
         </div>
 
+        <div class="our-services pt-5 mt-5">
+            <div class="container">
+                <div class="title-page mb-0">
+                    <h2>خدماتنا</h2>
+                    <p>This template is designed with a unique and simple, so that it can promote and laundry business solution.</p>
+                </div>
+                <div class="row  services-content">
+                    <div class="col-md-4 pt-5 mt-5 text-right">
+                        <div class="row mb-5">
+                            <div class="col-md-8">
+                                <h5>COIN LAUNDRY</h5>
+                                <p>Yes! Our templates already for desktop, tablet and mobile layout versions.</p>
+                            </div>
+                            <div class="col-md-4 text-sm-center">
+                                <img src="images/icon 3.png" alt="" style="width:100px;border-radius:50%">
+                            </div>
+                        </div>
+                        <div class="row mb-5">
+                            <div class="col-md-8">
+                                <h5>COIN LAUNDRY</h5>
+                                <p>Yes! Our templates already for desktop, tablet and mobile layout versions.</p>
+                            </div>
+                            <div class="col-md-4 text-sm-center">
+                                <img src="images/icon 3.png" alt="" style="width:100px;border-radius:50%">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-8">
+                                <h5>COIN LAUNDRY</h5>
+                                <p>Yes! Our templates already for desktop, tablet and mobile layout versions.</p>
+                            </div>
+                            <div class="col-md-4 text-sm-center">
+                                <img src="images/icon 3.png" alt="" style="width:100px;border-radius:50%">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="images/service_img_home2-u24208-fr.png" alt="" class="w-100">
+                    </div>
+
+                    <div class="col-md-4 pt-5 mt-5 text-right">
+                        <div class="row mb-5">
+                            <div class="col-md-4 text-sm-center">
+                                <img src="images/icon 3.png" alt="" style="width:100px;border-radius:50%">
+                            </div>
+                            <div class="col-md-8">
+                                <h5>COIN LAUNDRY</h5>
+                                <p>Yes! Our templates already for desktop, tablet and mobile layout versions.</p>
+                            </div>
+                        </div>
+                        <div class="row mb-5 ">
+                            <div class="col-md-4 text-sm-center">
+                                <img src="images/icon 3.png" alt="" style="width:100px;border-radius:50%">
+                            </div>
+                            <div class="col-md-8 ">
+                                <h5>COIN LAUNDRY</h5>
+                                <p>Yes! Our templates already for desktop, tablet and mobile layout versions.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 text-sm-center">
+                                <img src="images/icon 3.png" alt="" style="width:100px;border-radius:50%">
+                            </div>
+                            <div class="col-md-8 text-sm-center ">
+                                <h5>COIN LAUNDRY</h5>
+                                <p>Yes! Our templates already for desktop, tablet and mobile layout versions.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Download App -->
-        <div class="plans pt-5 mt-5" dir="ltr">
+        <div class="plans pt-5 mt-5 text-right" data-aos="fade-up"data-aos-easing="linear"data-aos-duration="1000">
             <div class="container-fluid">
                 <div class="row">
-
-                    <div class="col-lg-6 text-right download " style="padding-top: 15rem;">
-                        <p class="slider-content__title text-right">
-                            قم بتحميل البرنامج الان
-                        </p>
-                        <p class="text-secondary">
-                            التطبيق يجعلك تقوم بإدارة طلباتك بشكل مريح واطلبها متى وأينما تريد. هل قمت بالفعل بتنزيله؟
-                        </p>
-                        <div class="d-flex justify-content-end mt-5">
-                            <a href="#" class="ml-2">
-                                <img src="images/apple.svg" alt="">
-                            </a>
-                            <a href="#" class="ml-2">
-                                <img src="images/android.svg" alt="" style="width: 130px;">
-                            </a>
-                        </div>
-                        
-                    </div>
                     <div class="col-lg-6">
                         <div>
                             <img src="images/phone slide.png" alt="" class="w-100" >
                         </div>
                     </div>
+                    <div class="col-lg-6 download text-right" style="padding-top: 15rem;">
+                        <div class="pb-4 slider-content__title text-right">
+                            قم بتحميل تطبيقنا
+                        </div>
+                        <p class="text-secondary"> التطبيق الذي يقوم بادارة غسيل ملابسك من أجلك. قم بإدارة طلباتك بشكل مريح <br> واطلبها متى وأينما تريد. هل قمت بتنزيله بالفعل؟</p>
+                        <div class="d-flex justify-content-lg-start justify-content-sm-center mt-5">
+                            <a href="#" class="mr-2">
+                                <img src="images/apple.svg" alt="">
+                            </a>
+                            <a href="#" class="mr-2">
+                                <img src="images/android.svg" alt="" style="width: 130px;">
+                            </a>
+                        </div>
+                        
+                    </div>
                 </div>
 
             </div>
 
         </div>
 
-
-        <div class="footer">
+        <!-- <div class="open pt-5 pb-5">
             <div class="container">
-                <footer class="d-flex justify-content-center" style="flex-wrap: wrap;">
-                        <img src="images/MH Hoor-2.png" alt="" style="width: 200px;">
-                </footer>
+                <h4 class="text-secondary">Want to open point Hur ? </h4>
+                <div class="d-flex justify-content-between" style="flex-wrap: wrap;">
+                    <h4 class="text-secondary">Join the franchise revolution Hur, get information here</h4>
+                    <ul class="">
+                        <li class=""><a class=" nav-contact start pl-3 pr-3 btn btn-primary pb-2" style="color: #FFF !important;" href="register.html">Join today</a></li>                      
+                        <li class=" start"><a class="nav-contact btn btn-primary pl-3 pr-3 pb-2" style="background-color: #FFF !important;" href="#">Contact Us</a></li>                      
+                    </ul>
+                </div>
+            </div>
+        </div> -->
+
+
+        <footer class="text-right" data-aos="fade-up"data-aos-easing="linear"data-aos-duration="1000">
+            <div class="container text-center text-md-left pb-5">
+                <div class="row">
+                    <div class="col-md-6 mt-md-0 mt-3 pt-4 ">
+                        <h5 class="text-capitalize text-dark text-right">ms.hoor</h5>
+                        <p class="text-secondary text-right mt-2">نأخذ ملابسك من عند باب منزلك ونقوم بتسليمها مغسولة ومكواة خلال 48 ساعة.</p>
+                    </div>
+                    <div class="col-md-6 mt-md-0 mt-3 pt-2 d-flex justify-content-md-end justify-content-center">
+                        <img src="images/MH Hoor-2.png" alt="" style="width: 100px;">
+                    </div>
+                </div>
+            </div>
+            <div class="text-center bg-dark text-light p-2">
+                <p class="pt-2">4Soft, inc. 2020 We love our users</p>
                 <div class="social text-center">
                     <i class="fab fa-facebook"></i>
                     <i class="fab fa-linkedin"></i>
                     <i class="fab fa-google"></i>
                 </div>
-                <p class="text-secondary footer4soft">4Soft, inc. 2020 We love our users!</p>
             </div>
-        </div>
+        </footer>
+
 
 
 
@@ -229,6 +400,15 @@
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="js/sliderComponents.js"></script>
         <script src="js/e.js"></script>
+        <!-- Loader Script -->
+        <script>
+            setTimeout(function(){
+                $('.loader_bg').fadeToggle();
+            },1700)
+        </script>
+        <script>
+            AOS.init();
+        </script>
 	</body>
     
 
