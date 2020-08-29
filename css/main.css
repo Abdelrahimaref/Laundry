@@ -400,6 +400,9 @@ footer {
     width: 45px;
     height: 45px;
   }
+  .only-mob {
+    display: none;
+  }
 
   /** Services Section **/
   .services-content h5 {
@@ -446,6 +449,9 @@ footer {
     }
     .download-img {
       width: 100px !important;
+    }
+    .only-mob {
+      display: inline-block;
     }
   
   }  
