@@ -423,9 +423,6 @@ footer {
     .download {
       padding-top: 1rem !important;
     }
-    .responsive-link {
-      display:none
-    }
     .logo {
       padding-top: 50px;
       text-align: center;
@@ -433,11 +430,23 @@ footer {
     .slider__content-con {
       padding-top: 10px;
     }
-    .header-top {
+    .nav-social {
       display: none;
     }
     .our-services {
       display: none;
+    }
+    .header-top {
+      height: auto;
+    }
+    .mob-link {
+      display: none;
+    }
+    .phone {
+      font-size: 17px;
+    }
+    .download-img {
+      width: 100px !important;
     }
   
   }  
@@ -448,9 +457,7 @@ footer {
     .download {
       padding-top: 1rem !important;
     }
-    .responsive-link {
-      display:none
-    }
+
     .slider_content {
       text-align: center;
     }
